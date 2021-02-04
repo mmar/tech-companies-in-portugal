@@ -17,8 +17,3 @@ jobs:
       - uses: docker://dkhamsing/awesome_bot:latest
         with: 
           args: -f README.md --allow-ssl --allow-redirect --allow-dupe --white-list www.linkedin.com,www.hostelworldgroup.com,www.olxgroup.com,www.prozis.com,www.glintt.com,oracle.com
-
-      - name: Check links
-        run: >
-          awesome_bot -f README.md --allow-ssl --allow-redirect --allow-dupe
-          --white-list www.linkedin.com,www.hostelworldgroup.com,www.olxgroup.com,www.prozis.com,www.glintt.com,oracle.com
